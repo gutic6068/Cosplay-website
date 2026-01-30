@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+/* BANNER */
+.hero {
+    min-height: 100vh;
+    background-color: black; /* PRUEBA */
+
+    background-image: url("../img/banner/portada.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+}
+
+
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    opacity: 0.8;
+}
+
+/* SECCIONES */
+section {
+    padding: 60px 10%;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* COSPLAYS */
+.cosplay-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.cosplay-card {
+    background-color: #333;
+    padding: 40px;
+    text-align: center;
+}
+
+.intro {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #000;
+    color: white;
+}
+
+.intro h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.3rem;
+    opacity: 0.8;
+}
+
+.events {
+    padding: 60px 20px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+
+.events h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.events-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    border-radius: 14px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.event-date {
+    background-color: #e60073;
+    color: white;
+    border-radius: 12px;
+    width: 80px;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.event-date .day {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.event-date .month {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.event-date .year {
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+.event-info h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.event-info p {
+    margin: 5px 0 0;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 60vh;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 768px) {
+
+    .gallery-grid img {
+        height: 250px;
+    }
+
+}
